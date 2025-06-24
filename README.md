@@ -22,7 +22,7 @@ A modern React application to explore countries around the world. Search, and di
 ## Getting Started
 
 1. **Clone the repository:**
-   git clone https://github.com/your-username/worldatlas.git
+   git clone https://github.com/KushalBamroliya/worldatlas.git
    cd worldatlas
 
 2. **Install dependencies:**

@@ -1,0 +1,671 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: auto;
+  background: #25b09b;
+  --_m: 
+    conic-gradient(#0000 10%,#000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {to{transform: rotate(1turn)}}
+
+:root {
+  --bg-color: #202020;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #fff;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+::-webkit-scrollbar-track{
+  background-color: #000;
+}
+html {
+  font-size: 62%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #fff;
+}
+
+p,
+li,
+a,
+button {
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+a {
+  color: #000;
+}
+button {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  padding: 9.6px 38.4px;
+  text-align: center;
+  outline: none;
+  border: none;
+  text-transform: unset;
+  transition: all 0.3s ease-in-out;
+  background: #202020;
+  color: #fff;
+  border-radius: 24px;
+  border-width: 1.6px;
+  border-style: solid;
+  margin-top: 25.6px;
+}
+
+.hammenu{
+  display: none;
+} 
+
+header {
+  box-shadow:rgba(33,35,38,0.3)  0px 10px 10px -10px;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+/* Container utility */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid layout for navbar */
+.navbargrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Logo styling */
+.logo h1 {
+  font-size: 52px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Nav list styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  position: relative;
+  padding: 0.25rem 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #0077ff;
+}
+
+
+
+
+
+
+.heading-xl {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.paragraph {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.herosection {
+  padding: 3rem 1rem;
+  margin: 65px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.gridtwocols {
+  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hero content */
+.herocontent {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.heroimg .bannerimg {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.btn-darken {
+  background-color: #333;
+  color: white;
+}
+
+.btn-inline {
+  display: inline-flex;
+}
+
+.bg-white-box {
+  background: white;
+  color: #333;
+  border: 2px solid #ddd;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+
+.sectionabout {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.containertitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.gradientcards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.card {
+  width: 280px;
+  height: auto;
+  background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  color: white;
+  border: 1px solid #333;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.containercard {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cardtitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(to right, #ffc107, #ff9800);
+  color: black;
+  padding: 8px 12px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 10px rgba(255, 193, 7, 0.3);
+}
+
+.carddec {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #b0bec5;
+}
+
+.card span {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #eceff1;
+}
+
+.layoutcontact{
+  width: 60%;
+  height: 80vh;
+  margin: auto;
+}
+
+.contactusinner{
+  width: 80%;
+  height: 100%;
+  background-color: black;
+  margin: auto;
+  padding: 25px 0;
+}
+
+.headingcontact{
+  margin-bottom: 20px;
+  /* text-align: center; */
+  font-size: 2vw;
+}
+
+.inputvalue input,textarea{
+  width: 100%;
+  padding: 15px;
+  font-size: large;
+  border-radius: 10px;
+  border: 1px solid white;
+  resize: none;
+}
+.formcontrol{
+  background-color: #000;
+  color: #fff;
+}
+.inputvalue input,textarea:focus{
+  outline: none;
+}
+
+
+.footersecton {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 3rem 1rem;
+}
+
+/* Footer Items Container */
+.footeritem {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Individual Contact Block */
+.footercontact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Icon Styling */
+.footercontact .icon {
+  font-size: 2rem;
+  color: #00bcd4;
+}
+
+.footertext p:first-child {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.footertext p:last-child {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+
+
+
+/* Container section */
+.countrysection {
+  padding: 2rem;
+  
+}
+
+/* Responsive grid layout */
+.fourcolsline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual country card */
+.countrycard.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 400px;
+}
+
+.countrycard.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image container */
+.countryimg.containercard {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.imagecountry{
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+.countryimg.containercard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Country info section */
+.countryinfo {
+  padding: 1rem;
+  height: 50%;
+  /* background-color: red; */
+}
+
+.cardtitles {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background-color: #607d8b;
+  border-radius: 25px;
+  padding: 2px 0;
+  width: 100%;
+}
+
+.carddes {
+  font-weight: 600;
+  color: #555;
+}
+
+/* Responsive text */
+.countryinfo p {
+  /* margin: 0.25rem 0; */
+  font-size: 1.5rem;
+  /* color: #666; */
+}
+
+
+
+
+
+.fullwidthcard {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.innercontext {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Flag image styling */
+.flag {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  flex: 1;
+}
+
+/* Text content */
+.countrycontent {
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+}
+.countrycontent p{
+  font-size: 5rem;
+  border-radius: 25px;
+}
+
+.officialmsg {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.infocontainer {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infocontainer p {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #fff;
+  font-weight: 100;
+}
+.carddec {
+  color: #918686;
+}
+
+.searchfilter{
+  width: 330px;
+  margin: 30px 0;
+}
+.searchfilter input{
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  height: 0px;
+  width: 100%;
+  padding: 20px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+.searchfilter input:focus{
+  outline: none;
+}
+
+@media (max-width: 992px) {
+  .container{
+    flex-direction: column-reverse;
+  }
+  .heroimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .heroimg .bannerimg {
+    width: 80%;
+  }
+  .herocontent{
+    max-width: 700px;
+  }
+  .layoutcontact{
+    margin: 0;
+    width: 100%;
+  }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gridtwocols {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .herocontent {
+    margin-bottom: 2rem;
+  }
+
+  .heading-xl {
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+
+  .footeritem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footercontact {
+    width: 100%;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .footersecton{
+    display: flex;
+  }
+  .innercontext {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .flag {
+    max-width: 80%;
+  }
+
+  .infocontainer {
+    text-align: center;
+  }
+  .infocontainer p {
+    margin: 10px 0;
+    display: block;
+  }
+  .infocontainer {
+    display: block;
+  }
+  .countrycontent p{
+    font-size: 3.5rem;
+  }
+  .menuweb{
+    display: none;
+  }
+  .hammenu{
+    display: inline-block;
+  }
+  .hammenu button{
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 0;
+  }
+  .mobile{
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 14px 28px;
+    z-index: 11111111;
+  }
+  .mobile ul{
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .mobile ul li{
+    margin: 20px 0;
+  }
+  .mobile ul li a{
+    color: #fff;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width:560px) {
+  .countrysection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+

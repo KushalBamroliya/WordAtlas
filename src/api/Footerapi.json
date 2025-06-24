@@ -1,0 +1,18 @@
+[
+  {
+      "icon": "MdPlace",
+      "title": "Find us",
+      "details": "Rajkot, Gujarat, India"
+  },
+  {
+      "icon": "MdPhone",
+      "title": "Call us",
+      "details": "+91 98765 43210"
+  },
+  {
+      "icon": "MdAccessTime",
+      "title": "Working Hours",
+      "details": "Mon - Fri: 9AM - 6PM"
+  }
+]
+  
